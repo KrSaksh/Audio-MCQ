@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Box } from "@mui/material";
 import QuestionCard from "../components/QuestionCard";
 import { useQuestions } from "../api/questions";
-import QuizCompletedScreen from "../components/ResultScreens";
+import { QuizCompletedScreen } from "../components/ResultScreens";
 
 const QuizPage: React.FC = () => {
 	const { questions, loading, error } = useQuestions();
